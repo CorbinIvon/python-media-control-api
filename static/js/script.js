@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Media control buttons
   const volumeUpBtn = document.getElementById("volumeUp");
   const volumeDownBtn = document.getElementById("volumeDown");
-  const playBtn = document.getElementById("play");
-  const pauseBtn = document.getElementById("pause");
+  const playPauseBtn = document.getElementById("playPause");
   const stopBtn = document.getElementById("stop");
   const nextTrackBtn = document.getElementById("nextTrack");
   const previousTrackBtn = document.getElementById("previousTrack");
@@ -59,10 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     volumeDownBtn.addEventListener("click", () =>
       sendMediaCommand("volume_down")
     );
-  if (playBtn)
-    playBtn.addEventListener("click", () => sendMediaCommand("play"));
-  if (pauseBtn)
-    pauseBtn.addEventListener("click", () => sendMediaCommand("pause"));
+  if (playPauseBtn)
+    playPauseBtn.addEventListener("click", () => sendMediaCommand("play"));
   if (stopBtn)
     stopBtn.addEventListener("click", () => sendMediaCommand("stop"));
   if (nextTrackBtn)

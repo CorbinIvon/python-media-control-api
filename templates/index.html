@@ -10,15 +10,68 @@
     />
   </head>
   <body>
-    <h1>Media Control Interface</h1>
-    <div class="controls">
-      <button id="volumeUp">Volume Up</button>
-      <button id="volumeDown">Volume Down</button>
-      <button id="previousTrack">Previous</button>
-      <button id="play">Play</button>
-      <button id="pause">Pause</button>
-      <button id="stop">Stop</button>
-      <button id="nextTrack">Next</button>
+    <div class="container">
+      <h1>Media Control Remote</h1>
+      
+      <!-- div1: Main controller layout -->
+      <div class="controller-layout">
+        
+        <!-- div2: Volume Up at top -->
+        <div class="controller-section top-section">
+          <div class="remote-button volume-up">
+            <button id="volumeUp">
+              <i class="icon">▲</i>
+              <span>Volume Up</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- div3: Media controls in middle (previous, play/pause, next) -->
+        <div class="controller-section middle-section">
+          <div class="remote-button previous">
+            <button id="previousTrack">
+              <i class="icon">◀◀</i>
+              <span>Previous</span>
+            </button>
+          </div>
+          
+          <div class="remote-button play-pause">
+            <button id="playPause">
+              <i class "icon">▶/❚❚</i>
+              <span>Play / Pause</span>
+            </button>
+          </div>
+          
+          <div class="remote-button next">
+            <button id="nextTrack">
+              <i class="icon">▶▶</i>
+              <span>Next</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- div4: Volume Down at bottom -->
+        <div class="controller-section bottom-section">
+          <div class="remote-button volume-down">
+            <button id="volumeDown">
+              <i class="icon">▼</i>
+              <span>Volume Down</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Extra section for Stop button -->
+        <!-- <div class="controller-section extra-section">
+          <div class="remote-button stop">
+            <button id="stop">
+              <i class="icon">■</i>
+              <span>Stop</span>
+            </button>
+          </div>
+        </div> -->
+      </div>
+      
+      <!-- <div id="status" class="status-message"></div> -->
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>

@@ -1,13 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #f5f5f5;
+  margin: 0;
   padding: 20px;
   text-align: center;
 }
 
 h1 {
   color: #333;
+  margin-bottom: 30px;
 }
 
 .controls {
@@ -34,11 +35,174 @@ button:hover {
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
   text-align: center;
 }
 
 .api-button {
   margin: 10px;
+}
+
+/* Controller Layout Styling */
+.controller-layout {
+  background-color: #333;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.controller-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Button styling */
+.remote-button button {
+  background: linear-gradient(to bottom, #4d4d4d, #333);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.remote-button button:hover {
+  background: linear-gradient(to bottom, #5a5a5a, #444);
+  transform: translateY(-2px);
+}
+
+.remote-button button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon styling */
+.icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Volume buttons styling */
+.volume-up button,
+.volume-down button {
+  background: linear-gradient(to bottom, #4caf50, #388e3c);
+  width: 100px;
+  height: 100px;
+}
+
+.volume-up button:hover,
+.volume-down button:hover {
+  background: linear-gradient(to bottom, #5cba60, #429a42);
+}
+
+/* Play/Pause button styling */
+.play-pause button {
+  background: linear-gradient(to bottom, #2196f3, #1976d2);
+  width: 100px;
+  height: 100px;
+}
+
+.play-pause button:hover {
+  background: linear-gradient(to bottom, #42a5f5, #2196f3);
+}
+
+/* Next/Previous buttons styling */
+.previous button,
+.next button {
+  background: linear-gradient(to bottom, #ff9800, #f57c00);
+  width: 85px;
+  height: 85px;
+}
+
+.previous button:hover,
+.next button:hover {
+  background: linear-gradient(to bottom, #ffa726, #ff9800);
+}
+
+/* Stop button styling */
+.stop button {
+  background: linear-gradient(to bottom, #f44336, #d32f2f);
+  width: 70px;
+  height: 70px;
+}
+
+.stop button:hover {
+  background: linear-gradient(to bottom, #ef5350, #f44336);
+}
+
+/* Status Message */
+.status-message {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  min-height: 24px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) {
+  .controller-layout {
+    padding: 20px 10px;
+  }
+
+  .remote-button button {
+    width: 70px;
+    height: 70px;
+    font-size: 12px;
+  }
+
+  .volume-up button,
+  .volume-down button {
+    width: 85px;
+    height: 85px;
+  }
+
+  .play-pause button {
+    width: 85px;
+    height: 85px;
+  }
+
+  .previous button,
+  .next button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .stop button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .middle-section {
+    gap: 8px;
+  }
 }
