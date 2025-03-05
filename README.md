@@ -25,7 +25,7 @@ media-control-api
 
    ```
    git clone <repository-url>
-   cd media-control-api
+   cd python-media-control-api
    ```
 
 2. Create the virtual env and Install the required packages:
