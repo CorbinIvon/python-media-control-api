@@ -24,7 +24,7 @@ media-control-api
 1. Clone the repository:
 
    ```
-   git clone <repository-url>
+   git clone https://github.com/CorbinIvon/python-media-control-api.git
    cd python-media-control-api
    ```
 
